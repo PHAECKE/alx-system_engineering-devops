@@ -1,2 +1,3 @@
-it prints the absolute name of the current working directory
+it prints the absolute name of the current working directory,
 displays the content list of the current directory,
+changes the working directory to the user's home directory
