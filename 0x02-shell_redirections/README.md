@@ -1,1 +1,1 @@
-this project shows the shell redirections
+this project shows the shell redirections, 
