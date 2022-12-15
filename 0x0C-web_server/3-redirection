@@ -7,7 +7,7 @@ mkdir -p /var/www/html/
 sudo chmod -R 755 /var/www
 echo 'Hello World!' > /var/www/html/index.html
 SERVER_CONFIG=\
-"server {
+echo "server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 	root /var/www/html;
@@ -17,14 +17,14 @@ SERVER_CONFIG=\
 		try_files \$uri \$uri/ =404;
 	}
 	if (\$request_filename ~ redirect_me){
-		rewrite ^ https://sketchfab.com/bluepeno/models permanent;
+		rewrite ^ https://www.youtube.com/ permanent;
 	}
 }"
 
 bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 
 if [ "$(pgrep -c nginx)" -le 0 ]; then
-	service nginx start
+	sudo service nginx start
 else
-	service nginx restart
+	sudo service nginx restart
 fi
