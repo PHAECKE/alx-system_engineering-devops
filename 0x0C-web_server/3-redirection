@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 # Installs, configures, and starts the server
 apt-get update
 apt-get -y install nginx
@@ -7,7 +7,7 @@ mkdir -p /var/www/html/
 sudo chmod -R 755 /var/www
 echo 'Hello World!' > /var/www/html/index.html
 SERVER_CONFIG=\
-echo "server {
+"server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 	root /var/www/html;
@@ -17,7 +17,7 @@ echo "server {
 		try_files \$uri \$uri/ =404;
 	}
 	if (\$request_filename ~ redirect_me){
-		rewrite ^ https://www.youtube.com/ permanent;
+		rewrite ^ https://sketchfab.com/bluepeno/models permanent;
 	}
 }"
 
