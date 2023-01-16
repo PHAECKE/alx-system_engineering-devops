@@ -1,1 +1,1 @@
-this project is for api
+this project is for API
