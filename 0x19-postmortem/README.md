@@ -1,7 +1,7 @@
 Postmortem
 
 
-https://user-images.githubusercontent.com/105058306/215726489-4b6df178-7f9f-4a78-b4ba-e33a92c32bb9.mp4
+
 
 
 Any software system will eventually fail, and that failure can come stem from a wide range of possible factors: bugs, traffic spikes, security issues, hardware failures, natural disasters, human error Failing is normal and failing is actually a great opportunity to learn and improve. Any great Software Engineer must learn from his/her mistakes to make sure that they wont happen again. Failing is fine, but failing twice because of the same issue is not.
