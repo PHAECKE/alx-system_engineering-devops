@@ -1,9 +1,8 @@
 Postmortem
 
 
+![postmortem](https://user-images.githubusercontent.com/105058306/215735776-7a04bf06-38cc-42c9-ae7c-91434131b98b.gif)
 
-
-![image](https://user-images.githubusercontent.com/105058306/215735407-5a6eebd8-c4ef-4ff3-b5d0-217f03da4a8d.png)
 
 
 
