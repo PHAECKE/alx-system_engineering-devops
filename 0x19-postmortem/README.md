@@ -3,7 +3,8 @@ Postmortem
 
 
 
-https://user-images.githubusercontent.com/105058306/215734798-adda82ca-d3a0-4cbc-9793-f34127c834c4.mp4
+![image](https://user-images.githubusercontent.com/105058306/215735407-5a6eebd8-c4ef-4ff3-b5d0-217f03da4a8d.png)
+
 
 
 
