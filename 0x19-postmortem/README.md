@@ -19,7 +19,7 @@ Timeline
 * July 9, 2021 - It is reported that remote collection points are constantly failing in the process of collecting taxes and that the system does not allow retrying collection.
 * Julu 10, 2021 - It is identified that the collection model for which the system was originally designed is not suitable from the architectural point of view for the new collection model.
 * July 11, 2021 - Return to the previous collection model while developing new functionality to support the desired model.
-* March 26, 2021 - The new functionality that supports the new tax collection model will be released.
+* October 26, 2021 - The new functionality that supports the new tax collection model will be released.
 
 Root cause
 The way the tax is collected should represent a change in the software architecture and this change was not made.
