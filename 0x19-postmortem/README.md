@@ -8,7 +8,7 @@ Postmortem
 
 
 
-Any software system will eventually fail, and that failure can come stem from a wide range of possible factors: bugs, traffic spikes, security issues, hardware failures, natural disasters, human error Failing is normal and failing is actually a great opportunity to learn and improve. Any great Software Engineer must learn from his/her mistakes to make sure that they wont happen again. Failing is fine, but failing twice because of the same issue is not.
+Any software system will eventually fail, and the reasons for this failure can be numerous: bugs, spikes in traffic, security flaws, hardware failures, natural disasters, and human error Failing is normal, and it's actually a great chance to learn and improve. To avoid making the same mistakes again, a great software engineer must learn from them. Failing once due to the same issue is acceptable, but failing twice is not.
 
 A postmortem is a tool widely used in the tech industry. After any outage, the team(s) in charge of the system will write a summary that has 2 main goals:
 
@@ -16,19 +16,19 @@ A postmortem is a tool widely used in the tech industry. After any outage, the t
 * And to ensure that the root cause(s) of the outage has been discovered and that measures are taken to make sure it will be fixed.
 
 Timeline
-* March 2, 2019 - It is reported that remote collection points are constantly failing in the process of collecting taxes and that the system does not allow retrying collection.
-* March 3, 2019 - It is identified that the collection model for which the system was originally designed is not suitable from the architectural point of view for the new collection model.
-* March 4, 2019 - Return to the previous collection model while developing new functionality to support the desired model.
-* March 25, 2019 - The new functionality that supports the new tax collection model will be released.
+* July 9, 2021 - It is reported that remote collection points are constantly failing in the process of collecting taxes and that the system does not allow retrying collection.
+* Julu 10, 2021 - It is identified that the collection model for which the system was originally designed is not suitable from the architectural point of view for the new collection model.
+* July 11, 2021 - Return to the previous collection model while developing new functionality to support the desired model.
+* October 26, 2021 - The new functionality that supports the new tax collection model will be released.
 
 Root cause
-The change in the way the tax is collected should represent a change in the software architecture and this change was not made.
+The way the tax is collected should represent a change in the software architecture and this change was not made.
 
 Previous modality
 
 * To pay their taxes, the citizen had to go to the municipal administration office.
 * Once in the collection office, stand in line and wait for your turn
-* The collection officer processed each transaction waiting for the response from the system and once it was completed, it passed to the next in line.
+* Each transaction was processed by the collection officer while they waited for the system's response, and when that happened, the transaction went on to the next person in line.
 
 New modality
 
@@ -42,7 +42,7 @@ On the other hand, in the new modality citizens went to the different collection
 It was this parallel processing that caused the server to crash and cause loss of transactions.
 
 Corrective and Preventive Measures
-The demand processing architecture was changed and he publish/subscribe messaging pattern was implemented.
+The demand processing architecture was changed and the published/subscribed messaging pattern was implemented.
 
 On the other hand, it went from waiting for the confirmation of the collection waiting on the file to collect immediately and notify the processing once it has been done in the central system.
 
